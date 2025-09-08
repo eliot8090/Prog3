@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#top" class="site-header__logo" aria-label="Inicio">
+            <span class="site-header__mark" aria-hidden="true">M</span>
+            <span>MiTienda</span> 
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú" role="button">&#9776;</label>
+        
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section>
+
+            <div class="grid">
+
+                <div class="grid-item-1">
+                    <h2> 1) Sistema de botones</h2>
+                    <div class="btn-group">
+                        <button class="btn btn--primary">Primario</button>
+                        <button class="btn btn--secondary">Secundario</button>
+                        <button class="btn btn--outline">Outline</button>
+                        <button class="btn btn--danger">Peligro</button>
+                        <button class="btn btn--icon"><span class="icon"><img src="search.png" alt="Buscar" /></span> Con ícono</button>
+                        <button class="btn btn--primary" disabled>Deshabilitado</button>
+                    </div>
+                </div>
+
+            <article class="product-card">
+                
+                <h2>2) Tarjeta de Producto</h2>
+
+                <div class="product-card__media"><img src="zapatillas.webp" alt="Zapatillas Runner Pro"><div class="product-card__badge">Nuevo</div></div>
+
+                <div class="product-card__info"><h3 class="product-card__title">Zapatillas Runner Pro</h3><p class="product-card__description">Amortiguación ligera, malla respirable y suela antideslizante. Perfectas para entrenar todos los días.</p><div class="product-card__price-container"><span class="product-card__price">$ 24.999</span><span class="product-card__old-price">$ 29.999</span></div></div>
+
+                <div class="product-card__actions">
+                    <button class="btn btn--primary">Comprar ahora</button>
+                    <button class="btn btn--outline btn--icon"><span class="icon"><img src="circle.png" alt="Añadir" /></span>Añadir</button>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section id="novedades" class="container panel">
+
+            <h2>Novedades</h2>
+            <p class="code-note">Sección de relleno para probar el menú.</p>
+
+        </section>
+
+        <section id="ofertas" class="container panel">
+            <h2>Ofertas</h2>
+            <p class="code-note">Otra sección de relleno para probar enlaces.</p>
+        </section>
+
+        <section id="contacto" class="container panel">
+            <h2>Contacto</h2>
+            <p class="code-note">Más contenido de ejemplo para pruebas de navegación.</p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
